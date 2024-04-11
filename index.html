@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <header>Registration Form</header>
+
+       <form id="form" >
+        <div class="input-field">
+            <label for="full-name">Full Name</label><br>
+            <input name="fullName" id="username" type="text" placeholder="enter your full name" >
+            
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small>error</small>
+           
+        </div>
+        <div class="input-field">
+            <label for="email">Email Address</label><br>
+            <input name="email" id="email" type="email" placeholder="enter your email address" >
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small>error</small>
+        </div>
+        <div class="input-field">
+         
+            <label for="mobile">Mobile Number</label><br>
+            <input id="mobile" type="tel" placeholder="enter mobile number">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+           
+            <small>error</small>
+          
+        </div>
+        <!-- <div class="input-field">
+            <label for="date-of-birth">Date of Birth</label><br>
+            <input id="date-of-birth" type="date" >
+        </div>
+        <div class="input-field">
+            <label >Gender</label>
+            <div class="gender-details">
+                <input name="gender" type="radio" id="male">
+                <label for="male">Male</label>
+                <input name="gender" type="radio" id="female">
+                <label for="female">Female</label>
+                <input name="gender" type="radio" id="other">
+                <label for="other">Prefer not to say</label>
+            </div>
+           
+        </div> -->
+        
+        <div class="input-field">
+            <label for="password">Password</label><br>
+            <input name="password" type="password"  id="password" placeholder="enter your password" >
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small>error</small>
+           
+        </div>
+        <div class="input-field">
+            <label  for="confirm-password">Confirm Password</label><br>
+            <input name="confirmPassword" type="password"  id="password2" placeholder="confirm your password" >
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small>error</small>
+            
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Register" >
+        </div>
+       </form>
+      
+    </div>
+
+<script src="index.js"></script>
+
+   
+</body>
+</html>

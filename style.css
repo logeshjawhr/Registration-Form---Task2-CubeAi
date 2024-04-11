@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  
+}
+:root{
+    --background:#7743DB;
+    --input:white;
+    --input-hover:#c6a1db;
+    --container:#F7EFE5;
+    --hover-color:#6c2ede;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--background);
+}
+.container{
+   
+    background-color:var(--container) ;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.container header{
+    position: relative;
+    font-size: 30px;
+    font-weight:600;
+    text-align: center;
+    
+}
+/* small line below title*/
+.container header::before{
+    content: "";
+    position: absolute;
+    background-color: #7743DB;
+    height: 3px;
+    width: 280px;
+    bottom: -2px;
+
+}
+/* styling form */
+.container form{
+    
+    min-height: 450px;
+    margin-top: 5px;
+    
+}
+.container form .input-field{
+    position: relative;
+    padding: 3px;
+}
+ form  label{
+    font-size: 16px;
+    font-weight: 500;
+}
+form input[type=text] {
+    border: none;
+    padding: 7px;
+    background-color:var(--input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+form input[type=email] {
+    border: none;
+    padding: 7px;
+    background-color:var(--input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+form input[type=tel] {
+    border: none;
+    padding: 7px;
+    background-color:var(--input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+form input[type=date] {
+    border: none;
+    padding: 7px;
+    background-color:var(--input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+form input[type=password] {
+    border: none;
+    padding: 7px;
+    background-color:var(--input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+/* hover */
+
+
+/* submit button style */
+.submit-btn input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--background);
+    padding: 7px;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-weight: 500px;
+    font-size: 20px;
+    color: white;
+    
+}
+.submit-btn input:hover{
+    background-color:var(--hover-color) ;
+    cursor: pointer;
+}
+.gender-details label{
+font-weight: 400;
+}
+/* input{
+    position: relative;
+}
+i{
+    position: absolute;
+    right: 5px;
+    
+} */
+label{
+    display: inline-block;
+}
+input{
+    display: block;
+    position: relative;
+}
+i{
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.input-field.success i.fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+.input-field.error i.fa-circle-exclamation{
+    color: red;
+    visibility: visible;
+}
+small{
+    color: red;
+    visibility: hidden;
+}
+.input-field.error small{
+    visibility: visible;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   .container{
+   
+    border-radius: 0;
+    max-width: 400px;
+    width: 100%;
+   }
+
+   .container header{
+   padding-left: 30px;
+
+    
+}
+  }
