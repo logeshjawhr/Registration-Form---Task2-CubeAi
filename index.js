@@ -4,6 +4,8 @@ const mobile = document.getElementById("mobile");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
+
+
 form.addEventListener('submit', e=>{
     e.preventDefault();
     checkInput();
@@ -36,10 +38,10 @@ function checkInput(){
     if(mobileValue === ''){
         setError(mobile, 'mobile number cannot be blank');
     }
-    else if(mobileValue.length<11){
+    else if(mobileValue.length<10){
         setError(mobile, 'mobile number should be 10 digits');
     }
-    else if(mobileValue.length>11){
+    else if(mobileValue.length>10){
         setError(mobile, 'enter valid mobile number');
     }
     else{
